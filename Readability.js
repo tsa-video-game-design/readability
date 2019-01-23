@@ -1784,3 +1784,8 @@ Readability.prototype = {
 if (typeof module === "object") {
   module.exports = Readability;
 }
+try { //This runs a function when the module is loaded
+  onReadabilityLoadComplete();
+} catch(err) {
+  
+}
